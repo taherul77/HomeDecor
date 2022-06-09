@@ -14,7 +14,7 @@
                     </ul>
                 </div>
             </div>
-    </div>
+</div>
 
     <div class="shop-page-wrapper shop-page-padding ptb-100">
         <div class="container-fluid m-auto">
