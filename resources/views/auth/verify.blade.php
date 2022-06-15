@@ -1,17 +1,23 @@
 @extends('layouts.app')
 @section('title', 'Verify Email')
 @section('content')
-    <div class="breadcrumb-area pt-5 pb-5" style="background-color: #09c6a2">
-        <div class="container">
-            <div class="breadcrumb-content text-center">
-                <h2>{{ __('Verify Your Email Address') }}</h2>
-                <ul>
-                    <li><a href="{{route('home')}}">home</a></li>
-                    <li> {{ __('Verify Your Email Address') }} </li>
-                </ul>
+
+
+<div class="page-title" style="background-image:url('{{ asset('frontend/assets2/images/background/10.jpg') }}')">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <div class="title-box">
+                        <h1>{{ __('Verify Your Email Address') }}</h1>
+                    </div>
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{{ route('home') }}">home</a></li>
+                        <li> {{ __('Verify Your Email Address') }}</li>
+                    
+                    </ul>
             </div>
         </div>
     </div>
+    
     <!-- login-area start -->
     <div id="login-form" class="register-area ptb-100">
         <div class="container-fluid">

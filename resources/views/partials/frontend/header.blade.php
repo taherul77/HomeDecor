@@ -77,18 +77,17 @@
                                 <li class=""><a href="{{route('cart.index')}}">cart</a></li>
 
                                 <li class=""><a href="{{route('contact.index')}}">contact</a></li>
+                                
 
                                 @guest
                                     <li><a href="{{route('login')}}">Login</a></li>
                                     <li><a href="{{route('register')}}">Register</a></li>
                                 @else
-                                    <li>
-                                        <livewire:frontend.header.notification-component />
-                                    </li>
+                                    
 
-                                    <li>
-                                        <a href="javascript:void(0);" style="color: #578a01;">My Account</a>
-                                        <ul class="single-dropdown">
+
+                                    <li class="dropdown"><a href="javascript:void(0);">My Account</a>
+                                            <ul>
                                             @role('admin')
                                             <li>
                                                 <a href="{{ route('admin.index') }}" style="color: #578a01;">
@@ -108,8 +107,10 @@
                                                     @csrf
                                                 </form>
                                             </li>
-                                        </ul>
-                                    </li>
+                                            </ul>
+                                        </li>
+
+                                    
                                 @endguest                                
                             </ul>
                         </div>
