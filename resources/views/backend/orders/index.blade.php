@@ -26,7 +26,9 @@
                 </tr>
                 </thead>
                 <tbody>
-                @forelse($orders as $order)
+                var_dump($orders)
+
+                <!-- @forelse($orders as $order)
                     <tr>
                         <td>
                             <a href="{{ route('admin.orders.show', $order) }}">
@@ -57,7 +59,7 @@
                     <tr>
                         <td class="text-center" colspan="6">No orders found.</td>
                     </tr>
-                @endforelse
+                @endforelse -->
                 </tbody>
                 <tfoot>
                 <tr>

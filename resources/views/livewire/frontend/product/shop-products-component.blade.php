@@ -22,11 +22,11 @@
                                         <div class="product-furit-action">
                                             <a wire:click.prevent="addToCart('{{ $product->id }}')"
                                                 class="furit-animate-left" title="Add To Cart">
-                                                <i class="fas fa-shopping-cart"></i>
+                                                <i class="fa fa-shopping-cart"style="font-size: 25px;"></i>
                                             </a>
                                             <a wire:click.prevent="addToWishList('{{ $product->id }}')"
                                                 class="furit-animate-right" title="Wishlist">
-                                                <i class="fas fa-heart"></i>
+                                                <i class="fa fa-heart"style="font-size: 25px;"></i>
                                             </a>
                                         </div>
 

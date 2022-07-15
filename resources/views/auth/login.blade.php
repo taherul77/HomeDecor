@@ -19,7 +19,7 @@
     <div id="login-form" class="login-section">
         <div class="auto-container">
             <div class="row clearfix">
-                <div class="column col-lg-6 col-md-12 col-sm-12">
+                <div class="column col-lg-6 col-md-12 col-sm-12 mx-auto">
                     <div class="login">
                         <div class="login-form">
                             <div class="form-group">
@@ -55,7 +55,7 @@
                                             {{ __('Remember Me') }}
                                         </label>
                                     </div>
-                                    <div class="form-group mt-4 mb-0">
+                                    <!-- <div class="form-group mt-4 mb-0">
                                         <a href="{{ route('social_login', 'facebook') }}" class="btn btn-block" style="background-color: #1877F2; color: #FFFFFF">
                                             Login with Facebook
                                         </a>
@@ -65,7 +65,7 @@
 {{--                                    <a href="{{ route('social_login', 'google') }}" class="btn btn-block" style="border-color: #1877F2; color: black">--}}
 {{--                                        Login with Google--}}
 {{--                                    </a>--}}
-                                    </div>
+                                    </div> -->
                                 </form>
                             </div>
                         </div>

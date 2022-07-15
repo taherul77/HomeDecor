@@ -19,7 +19,7 @@
     <div id="login-form" class="login-section">
         <div class="auto-container">
             <div class="row clearfix">
-                <div class="column col-lg-6 col-md-12 col-sm-12">
+                <div class="column col-lg-6 col-md-12 col-sm-12 mx-auto">
                     <div class="login">
                         <div class="login-form register-form">
                             <div class="form-group">
