@@ -104,9 +104,9 @@
                 <div class="sec-title text-center"><span class="title float-text">Team</span>
                     <h2>Our Team</h2>
                 </div>
-                <div class="row clearfix">
+                <div class="row clearfix ">
                     <!-- Team Block -->
-                    <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="team-block col-lg-4 col-md-6 col-sm-12 mx-auto">
                         <div class="inner-box">
                             <div class="image-box">
                                 <div class="image"><img src="{{ asset('frontend/assets2/images/resource/team-1.jpg') }}">
@@ -116,7 +116,7 @@
                             </div><span class="designation">Architect</span>
                         </div>
                     </div><!-- Team Block -->
-                    <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="team-block col-lg-4 col-md-6 col-sm-12 mx-auto">
                         <div class="inner-box">
                             <div class="image-box">
                                 <div class="image"><img src="{{ asset('frontend/assets2/images/resource/team-2.jpg') }}">
@@ -126,16 +126,7 @@
                             </div><span class="designation">Project Manager</span>
                         </div>
                     </div><!-- Team Block -->
-                    <div class="team-block col-lg-4 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                            <div class="image"><img src="{{ asset('frontend/assets2//images/resource/team-3.jpg') }}">
-                                </div>
-                                
-                                <h3 class="name">Cheryl Ray</h3>
-                            </div><span class="designation">Interior Designer</span>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>

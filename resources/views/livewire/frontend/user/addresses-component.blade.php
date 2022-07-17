@@ -71,6 +71,7 @@
                 <label class="text-small text-uppercase" for="state_id">State</label>
                 <select class="form-control form-control-lg" wire:model="state_id">
                     <option value="">Select State</option>
+                    <option value="771">Dhaka District</option>
                     @forelse($states as $state)
                         <option value="{{ $state->id }}">{{ $state->name }}</option>
                     @empty
@@ -82,6 +83,14 @@
                 <label class="text-small text-uppercase" for="city_id">City</label>
                 <select class="form-control form-control-lg" wire:model="city_id">
                     <option value="">Select City</option>
+                    <option value="8454">Azimpur</option>
+                    <option value="8486">Dhaka</option>
+                    <option value="8490">Faridpur</option>
+                    <option value="8548">Narsingdi</option>
+                    <option value="8527">Madaripur</option>
+                    <option value="8516">Kishorganj</option>
+                    <option value="8547">Narayanganj</option>
+
                     @forelse($cities as $city)
                         <option value="{{ $city->id }}">{{ $city->name }}</option>
                     @empty

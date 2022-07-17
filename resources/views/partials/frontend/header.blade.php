@@ -12,16 +12,16 @@
             <div class="inner-container clearfix">
                 <div class="top-left">
                     <ul class="contact-list clearfix">
-                        <li><i class="fa fa-volume-control-phone"></i></li>
-                        <li><i class="fa fa-envelope"></i><a href="#"></a></li>
+                        <li>01710090697<i class="fa fa-volume-control-phone"></i></li>
+                        <li>taherul2317@gmail.com<i class="fa fa-envelope"></i><a href="#"></a></li>
                     </ul>
                 </div>
                 <div class="top-right">
                     <ul class="social-icon-four clearfix">
-                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.whatsapp.com/01710090697"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.facebook.com/taz.islam.5074"><i class="fa fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/sktaherulislamtaz"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.twitter.com/taherul_taz"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                     </ul>
                 </div>
@@ -134,21 +134,32 @@
                                 </button>
                                 <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
                                     <li class="panel-outer">
-                                        <div class="form-container">
-                                            <form method="post" action="{{ ('shop') }}">
+                                    <div class="furniture-search">
+                                        <form>
+                                            <div class="form-input">
+                                                <input id="search" type="text"
+                                                    value="{{ old('keyword', request()->keyword) }}"
+                                                    placeholder="Search for product...">
+                                            </div>
+                                        </form>
+                                    </div>
+                                        <!-- <div class="form-container">
+                                            <form>
                                                 <div class="form-group">
-                                                    <input type="search" name="field-name" value="" placeholder="Search Here" required>
+                                                    <input id="search" type="text" 
+                                                            value="{{ old('keyword', request()->keyword) }}" 
+                                                            placeholder="Search Here" required>
                                                     <button type="submit" class="search-btn">
                                                         <span class="fa fa-search"></span>
                                                     </button>
                                                 </div>
                                             </form>
-                                            <!-- <form>
+                                            <-- <form>
                                                 <div class="form-input">
                                                     <input id="search" type="text" value="{{ old('keyword', request()->keyword) }}" placeholder="Search for product...">
                                                 </div>
                                             </form> -->
-                                        </div>
+                                        <!-- </div> -->
                                     </li>
                                 </ul>
                             </div>

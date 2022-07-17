@@ -32,12 +32,12 @@
                                 @csrf
                                     <div class="row">
                                         <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                            <input type="text" name="username" value="{{ old('name') }}" placeholder="Name">
+                                            <input type="text" name="name" value="{{ old('name') }}" placeholder="Name">
                                             @error('name')<span class="text-danger">{{ $message }}</span>@enderror
                                         </div>
                                         
                                         <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                            <input type="text" name="Title" value="{{ old('title') }}" placeholder="Title">
+                                            <input type="text" name="title" value="{{ old('title') }}" placeholder="Title">
                                             @error('title')<span class="text-danger">{{ $message }}</span>@enderror
                                         </div>
                                         <div class="form-group col-lg-6 col-md-12 col-sm-12">
@@ -49,8 +49,7 @@
                                             @error('message')<span class="text-danger">{{ $message }}</span>@enderror
                                         </div>
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12"><button
-                                                class="theme-btn btn-style-three" type="submit"
-                                                name="submit-form">Submit</button></div>
+                                                class="theme-btn btn-style-three">Submit</button></div>
                                     </div>
                                 </form>
                             </div>

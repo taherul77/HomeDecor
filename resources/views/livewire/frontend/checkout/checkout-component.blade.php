@@ -1,3 +1,7 @@
+<!-- <style>
+    .modal-backdrop{display:none};
+</style> -->
+
 <div>
     <div class="row">
         <div class="col-md-12 mb-3">
@@ -41,7 +45,8 @@
                 @empty
                     <div class="col-6 form-group">
                         <p class="text-danger">No addresses found</p>
-                        <a class="btn btn-dark" href="#">Add Your Address</a>
+                        <a class="btn btn-dark" href="{{ route('user.addresses') }}">Add Your Address</a>
+                        <!-- <a class="btn btn-dark" data-target="#khobusmodal" data-toggle="modal" href="#">Add Your Address</a> -->
                     </div>
                 @endforelse
             </div>
@@ -186,3 +191,34 @@
 </div>
 
 </div>
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<!-- <div class="modal fade mt-5" id="khobusmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <form method="post" action="">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Add Your Address</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <input class="" id=""  name="" type="text" placeholder="Enter Your Address"  />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </form>
+    </div>
+  </div>
+</div> -->

@@ -43,8 +43,8 @@
                                                         id="pro-details{{ $loop->index }}" role="tabpanel">
                                                         <div class="image-box">
                                                             @if($product->media)
-                                                                <a href="{{ asset('frontend/assets2images/products/' . $media->file_name ) }}">
-                                                                    <img src="{{ asset('frontend/assets2images/products/' . $media->file_name ) }}"
+                                                                <a href="{{ asset('frontend/assets2/images/resource/products/' . $media->file_name ) }}">
+                                                                    <img src="{{ asset('frontend/assets2/images/resource/products/' . $media->file_name ) }}"
                                                                         alt="{{ $product->name }}">
                                                                 </a>
                                                             @else
@@ -60,13 +60,13 @@
                                                         <a class="{{ $loop->index == 0 ? 'active' : '' }} mr-12"
                                                         href="#pro-details{{ $loop->index }}" data-toggle="tab" role="tab"
                                                         aria-selected="true">
-                                                            <img style="width: 90px;" src="{{ asset('frontend/assets2images/products/' . $media->file_name ) }}"
+                                                            <img style="width: 90px;" src="{{ asset('frontend/assets2/images/resource/products/' . $media->file_name ) }}"
                                                                 alt="{{ $product->name }}">
                                                         </a>
                                                     @endforeach
                                                 </div>
                                          @else
-                                                <img src="{{ asset('img/no-img.png' ) }}" alt="{{ $product->name }}">
+                                                <img src="{{ asset('frontend/assets2/images/resource/products/10.jpg' ) }}" alt="{{ $product->name }}">
                                          @endif
                                                             
                                         </div>
