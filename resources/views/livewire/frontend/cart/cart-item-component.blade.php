@@ -37,9 +37,9 @@
     <td>
         <a wire:click.prevent="removeFromCart('{{ $cartItem->rowId }}')"
            x-on:click="show = false"
-           style="cursor: pointer;" class="remove-btn">
-            <!-- <i class="fas fa-trash-alt text-muted"></i> -->
-            <i class="fa fa-trash" aria-hidden="true"></i>
+           style="cursor: pointer;" >
+            <i class="fas fa-trash-alt text-muted"></i>
+            <!-- <i class="fa fa-trash"></i> -->
         </a>
     </td>
 </tr>

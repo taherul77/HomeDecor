@@ -28,6 +28,7 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact.index
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('/page/{slug}', [PageController::class, 'show'])->name('page.show');
 
+
 // login by social media [ Facebook - Twitter - Google ]
 Route::get('login/{provider}', [LoginController::class, 'redirectToProvider'])->name('social_login');
 Route::get('login/{provider}/callback', [LoginController::class, 'handleProviderCallback'])->name('social_login_callback');

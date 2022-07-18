@@ -8,14 +8,15 @@
         </div>
     </div>
 
-    <form wire:submit.prevent="{{ $editMode ? 'updateAddress' : 'storeAddress' }}" x-show="formShow" @click.away="formShow = false">
+    <!-- <form wire:submit.prevent="{{ $editMode ? 'updateAddress' : 'storeAddress' }}" x-show="formShow" @click.away="formShow = false"> -->
+        <form method="post" action="storeAddress">
         @if ($editMode)
             <input type="hidden" wire:model="address_id">
         @endif
         <div class="row">
             <div class="col-lg-8 form-group">
                 <label class="text-small text-uppercase" for="address_title">Address title</label>
-                <input class="form-control" wire:model="address_title" type="text" placeholder="Enter your address title">
+                <input class="form-control" name="address_title" type="text" placeholder="Enter your address title">
                 @error('address_title')<span class="text-danger">{{ $message }}</span>@enderror
             </div>
             <div class="col-lg-4 form-group">

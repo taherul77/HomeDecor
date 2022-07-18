@@ -54,6 +54,7 @@ class UserController extends Controller
         if ($request->hasFile('user_image')) {
             $userImage = $this->imageService->storeUserImages($request->username, $request->user_image);
         }
+        // echo $request->address_title;
 
         $user = User::create([
             'first_name' => $request->first_name,

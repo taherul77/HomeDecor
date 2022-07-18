@@ -24,6 +24,8 @@ class UserController extends Controller
 
     public function updateProfile(ProfileRequest $request)
     {
+        // echo $request->address_title;
+        
         $user = auth()->user();
         if (!empty($request->password) && !Hash::check($request->password, $user->password)) {
             $password = bcrypt($request->password);
