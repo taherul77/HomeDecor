@@ -176,7 +176,7 @@
 
             <!--Logo-->
             <div class="logo pull-left">
-                <a href="index.html" title=""><img src="images/logo100.png" alt="" title=""></a>
+                <a href="index.html" title=""><img src="frontend/assets2/images/logo100.png" alt="" title=""></a>
             </div>
 
             <!--Right Col-->

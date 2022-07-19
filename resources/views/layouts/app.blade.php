@@ -88,7 +88,7 @@
     </div>
     <script src="{{ asset('frontend/assets2/js/jquery.js') }}"></script>
     <script src="{{ asset('frontend/assets2/js/popper.min.js') }}"></script>
-    <script src="{{ asset('frontend/assets2/js/bootstrap.min.js') }}"></script>
+    <!-- <script src="{{ asset('frontend/assets2/js/bootstrap.min.js') }}"></script> -->
     <script src="{{ asset('frontend/assets2/js/jquery.fancybox.js') }}"></script>
     <script src="{{ asset('frontend/assets2/js/owl.js') }}"></script>
     <script src="{{ asset('frontend/assets2/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
@@ -99,6 +99,26 @@
     <!-- Color Setting -->
 
     <script src="{{ asset('frontend/assets2/js/color-settings.js') }}"></script>
+
+
+
+
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('frontend/js/vendor/modernizr-2.8.3.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/vendor/jquery-1.12.0.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery.counterup.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/waypoints.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/ajax-mail.js') }}"></script>
+    <script src="{{ asset('frontend/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/plugins.js') }}"></script>
+    <script src="{{ asset('frontend/js/main.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/alert-message.js') }}"></script>
+    <script src="{{ url('https://kit.fontawesome.com/8003f9e0e2.js') }}" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
 
     <script>
         $(document).ready(function() {

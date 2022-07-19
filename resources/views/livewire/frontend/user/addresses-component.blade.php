@@ -8,15 +8,14 @@
         </div>
     </div>
 
-    <!-- <form wire:submit.prevent="{{ $editMode ? 'updateAddress' : 'storeAddress' }}" x-show="formShow" @click.away="formShow = false"> -->
-        <form method="post" action="storeAddress">
+    <form wire:submit.prevent="{{ $editMode ? 'updateAddress' : 'storeAddress' }}" x-show="formShow" @click.away="formShow = false">
         @if ($editMode)
             <input type="hidden" wire:model="address_id">
         @endif
         <div class="row">
             <div class="col-lg-8 form-group">
                 <label class="text-small text-uppercase" for="address_title">Address title</label>
-                <input class="form-control" name="address_title" type="text" placeholder="Enter your address title">
+                <input class="form-control" wire:model="address_title" type="text" placeholder="Enter your address title">
                 @error('address_title')<span class="text-danger">{{ $message }}</span>@enderror
             </div>
             <div class="col-lg-4 form-group">
@@ -72,7 +71,6 @@
                 <label class="text-small text-uppercase" for="state_id">State</label>
                 <select class="form-control form-control-lg" wire:model="state_id">
                     <option value="">Select State</option>
-                    <option value="771">Dhaka District</option>
                     @forelse($states as $state)
                         <option value="{{ $state->id }}">{{ $state->name }}</option>
                     @empty
@@ -84,14 +82,6 @@
                 <label class="text-small text-uppercase" for="city_id">City</label>
                 <select class="form-control form-control-lg" wire:model="city_id">
                     <option value="">Select City</option>
-                    <option value="8454">Azimpur</option>
-                    <option value="8486">Dhaka</option>
-                    <option value="8490">Faridpur</option>
-                    <option value="8548">Narsingdi</option>
-                    <option value="8527">Madaripur</option>
-                    <option value="8516">Kishorganj</option>
-                    <option value="8547">Narayanganj</option>
-
                     @forelse($cities as $city)
                         <option value="{{ $city->id }}">{{ $city->name }}</option>
                     @empty

@@ -2,11 +2,11 @@
     <td class="product-thumbnail">
         @if($wishlistItem->model->firstMedia)
             <a href="{{ route('product.show', $wishlistItem->model->slug) }}">
-                <img src="{{ asset('storage/images/products/' . $wishlistItem->model->firstMedia->file_name) }}"
+                <img src="{{ asset('frontend/assets2/images/resource/products/' . $wishlistItem->model->firstMedia->file_name) }}"
                      alt="{{ $wishlistItem->model->name }}" width="70">
             </a>
         @else
-            <img src="{{ asset('img/no-img.png') }}" alt="{{ $wishlistItem->model->name }}" width="70"/>
+            <img src="{{ asset('frontend/assets2/images/resource/products/10.jpg') }}" alt="{{ $wishlistItem->model->name }}" width="70"/>
         @endif
     </td>
     <td class="product-name"><a href="{{ route('product.show', $wishlistItem->model->slug) }}">{{ $wishlistItem->model->name }}</a></td>
