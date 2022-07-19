@@ -186,7 +186,7 @@
                 <nav class="main-menu">
                     <div class="navbar-collapse show collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li class="current dropdown">
+                            <li class="">
                                 <a href="{{route('home')}}">Home</a>
                             </li>
 

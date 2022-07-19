@@ -109,21 +109,21 @@
                     <div class="team-block col-lg-4 col-md-6 col-sm-12 mx-auto">
                         <div class="inner-box">
                             <div class="image-box">
-                                <div class="image"><img src="{{ asset('frontend/assets2/images/resource/team-1.jpg') }}">
+                                <div class="image"><img src="{{ asset('frontend/assets2/images/resource/sadia.jpg') }}">
                                 </div>
                                 
-                                <h3 class="name">Scott Grey</h3>
-                            </div><span class="designation">Architect</span>
+                                <h3 class="name"><a href="https://www.facebook.com/taz.islam.5074"> Salma Akter </a></h3>
+                            </div><span class="designation"></span>
                         </div>
                     </div><!-- Team Block -->
                     <div class="team-block col-lg-4 col-md-6 col-sm-12 mx-auto">
                         <div class="inner-box">
                             <div class="image-box">
-                                <div class="image"><img src="{{ asset('frontend/assets2/images/resource/team-2.jpg') }}">
+                                <div class="image"><img src="{{ asset('frontend/assets2/images/resource/ta.jpg') }}">
                                 </div>
                                 
-                                <h3 class="name"> Reed</h3>
-                            </div><span class="designation">Project Manager</span>
+                                <h3 class="name"><a href="https://www.facebook.com/taz.islam.5074"> Sk Taherul Islam Taz </a></h3>
+                            </div><span class="designation"></span>
                         </div>
                     </div><!-- Team Block -->
                     

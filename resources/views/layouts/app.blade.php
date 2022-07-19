@@ -31,12 +31,12 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
    <link rel="stylesheet" href="{{ asset('frontend/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('frontend/css/themify-icons.css') }}">
-    <link rel="stylesheet" href="{{ asset('frontend/css/icofont.css') }}">
-     <link rel="stylesheet" href="{{ asset('frontend/css/meanmenu.min.css') }}"> 
-     <link rel="stylesheet" href="{{ asset('frontend/css/bundle.css') }}">
-     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}"> -->
+    <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }}"> -->
+    <!-- <link rel="stylesheet" href="{{ asset('frontend/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/icofont.css') }}"> -->
+     <!-- <link rel="stylesheet" href="{{ asset('frontend/css/meanmenu.min.css') }}">  -->
+     <!-- <link rel="stylesheet" href="{{ asset('frontend/css/bundle.css') }}"> -->
+     <!-- <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}"> -->
      <!-- <link rel="stylesheet" href="{{ asset('frontend/css/responsive.css') }}"> -->
     <!-- <link rel="stylesheet" href="{{ asset('frontend/css/custom.css') }}">  -->
 
