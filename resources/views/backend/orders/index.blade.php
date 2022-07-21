@@ -26,8 +26,6 @@
                 </tr>
                 </thead>
                 <tbody>
-                <!-- var_dump($orders) -->
-
                 @forelse($orders as $order)
                     <tr>
                         <td>

@@ -22,12 +22,12 @@
             <span class="text-uppercase text-gray headings-font-family"></span>
             <a wire:click.prevent="decreaseQuantity('{{ $cartItem->rowId }}')"
                 style="cursor: pointer;">
-                <i class="fa fa-caret-left"></i>
+                <i class="fas fa-caret-left"></i>
             </a>
             <span class="text-center">{{ $itemQuantity }}</span>
             <a wire:click.prevent="increaseQuantity('{{ $cartItem->rowId }}', '{{ $cartItem->id }}')"
                 style="cursor: pointer;">
-                <i class="fa fa-caret-right"></i>
+                <i class="fas fa-caret-right"></i>
             </a>
         </div>
     </td>
@@ -37,9 +37,8 @@
     <td>
         <a wire:click.prevent="removeFromCart('{{ $cartItem->rowId }}')"
            x-on:click="show = false"
-           style="cursor: pointer;" >
-            <i class="fa fa-trash text-muted"></i>
-            <!-- <i class="fa fa-trash"></i> -->
+           style="cursor: pointer;">
+            <i class="fas fa-trash-alt text-muted"></i>
         </a>
     </td>
 </tr>
