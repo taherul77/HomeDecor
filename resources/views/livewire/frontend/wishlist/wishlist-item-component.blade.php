@@ -14,7 +14,7 @@
         <a wire:click="moveToCart('{{ $wishlistItem->rowId }}')" x-on:click="show = false" style="cursor: pointer;" class="text-primary">move to cart</a>
     </td>
     <td class="product-price-cart">
-        <span class="amount">${{ $wishlistItem->model->price }}</span>
+        <span class="amount">&#2547;{{ $wishlistItem->model->price }}</span>
     </td>
     <td>
         <a wire:click.prevent="removeFromWishlist('{{ $wishlistItem->rowId }}')"

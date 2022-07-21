@@ -27,7 +27,7 @@
                         </div>
                         <div class="clearfix">
                             <a class="" href="{{route('product.show', $product->slug)}}">{{ $product->name }}</a><br>
-                            <span class="small">${{ $product->price }}</span>
+                            <span class="small">&#2547;{{ $product->price }}</span>
                         </div>
                     </div>
                 </div>

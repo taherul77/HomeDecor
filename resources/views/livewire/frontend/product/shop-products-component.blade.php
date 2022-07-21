@@ -35,7 +35,7 @@
                                         <h4>
                                             <a href="{{route('product.show', $product->slug)}}">{{ $product->name }}</a>
                                         </h4>
-                                        <span>${{ $product->price }}</span>
+                                        <span>&#2547;{{ $product->price }}</span>
                                         <div>
                                             @if($product->tags->count() > 0)
                                             @foreach($product->tags as $tag)

@@ -140,7 +140,7 @@
                             <th class="product-name">
                                 <strong>Subtotal</strong>
                             </th>
-                            <th class="product-total">${{ $cartSubTotal }}</th>
+                            <th class="product-total">&#2547;{{ $cartSubTotal }}</th>
                         </tr>
                         @if(session()->has('coupon'))
                             <tr>
@@ -152,7 +152,7 @@
                                             <small>Remove coupon</small>
                                         </a>
                                 </th>
-                                <th class="product-total">- ${{ $cartDiscount }}</th>
+                                <th class="product-total">- &#2547;{{ $cartDiscount }}</th>
                             </tr>
                         @endif
                         @if(session()->has('shipping'))
@@ -161,21 +161,21 @@
                                     <strong>Shipping</strong>
                                     <small>({{ getNumbersOfCart()->get('shippingCode') }})</small>
                                 </th>
-                                <th class="product-total">${{ $cartShipping }}</th>
+                                <th class="product-total">&#2547;{{ $cartShipping }}</th>
                             </tr>
                         @endif
                         <tr>
                             <th class="product-name">
                                 <strong>Tax</strong>
                             </th>
-                            <th class="product-total">${{ $cartTax }}</th>
+                            <th class="product-total">&#2547;{{ $cartTax }}</th>
                         </tr>
                         <tr class="order-total">
                             <th>
                                 <strong>Total</strong>
                             </th>
                             <td>
-                                <strong><span>${{ $cartTotal }}</span></strong>
+                                <strong><span>&#2547;{{ $cartTotal }}</span></strong>
                             </td>
                         </tr>
                         </tbody>

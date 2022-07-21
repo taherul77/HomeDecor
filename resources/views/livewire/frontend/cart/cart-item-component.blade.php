@@ -15,7 +15,7 @@
         <a href="#">{{ $cartItem->model->name }}</a>
     </td>
     <td class="product-price-cart">
-        <span class="amount" style="font-size: 16px;">${{ $cartItem->model->price }}</span>
+        <span class="amount" style="font-size: 16px;">&#2547;{{ $cartItem->model->price }}</span>
     </td>
     <td class="product-quantity" style="font-size: 16px;">
         <div class="d-flex align-items-center justify-content-between">
@@ -32,7 +32,7 @@
         </div>
     </td>
     <td>
-        <p class="mb-0">${{ ($cartItem->model->price) * ($cartItem->qty) }}</p>
+        <p class="mb-0">&#2547;{{ ($cartItem->model->price) * ($cartItem->qty) }}</p>
     </td>
     <td>
         <a wire:click.prevent="removeFromCart('{{ $cartItem->rowId }}')"

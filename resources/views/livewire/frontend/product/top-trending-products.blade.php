@@ -21,7 +21,7 @@
             <div  class="product-furit-action">
                 <a wire:click.prevent="addToCart('{{ $product->id }}')"
                     class="furit-animate-left" title="Add To Cart">
-                    <i class="fa fa-cart-plus" style="font-size: 25px;"></i>
+                    <i class="fa fa-shopping-cart" style="font-size: 25px;"></i>
                 </a>
                 <a  wire:click.prevent="addToWishList('{{ $product->id }}')"
                     class="furit-animate-right" title="Wishlist">
@@ -34,7 +34,7 @@
             <h4>
                 <a href="{{route('product.show', $product->slug)}}">{{ $product->name }}</a>
             </h4>
-            <span>${{ $product->price }}</span>
+            <span>&#2547;{{ $product->price }}</span>
             <div>
                 @if($product->tags->count() > 0)
                 @foreach($product->tags as $tag)
