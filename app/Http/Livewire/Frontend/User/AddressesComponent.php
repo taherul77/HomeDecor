@@ -72,7 +72,7 @@ class AddressesComponent extends Component
 
         $this->resetForm();
         $this->showForm = false;
-        $this->alert('success', 'Address created successfully');
+        // $this->alert('success', 'Address created successfully');
     }
 
     public function editAddress($id)
@@ -114,7 +114,7 @@ class AddressesComponent extends Component
 
         $this->resetForm();
         $this->showForm = false;
-        $this->alert('success', 'Address updated successfully');
+        // $this->alert('success', 'Address updated successfully');
     }
 
     public function deleteAddress($id)
@@ -124,7 +124,7 @@ class AddressesComponent extends Component
             auth()->user()->addresses()->first()->update(['default_address' => true]);
         }
         $address->delete();
-        $this->alert('success', 'Address deleted successfully');
+        // $this->alert('success', 'Address deleted successfully');
     }
 
     public function resetForm()

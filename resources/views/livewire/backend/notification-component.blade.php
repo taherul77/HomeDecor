@@ -23,11 +23,11 @@
                 <div class="small text-gray-500">{{ $notification->data['created_date'] }}</div>
                 @if($notification->type == 'App\Notifications\Backend\User\ReturnRequestOrderNotification')
                     <span class="font-weight-bold">
-                        A return request with amount ({{ $notification->data['amount'] }}) from {{ $notification->data['user_name'] }}
+                        A return request with amount ({{ $notification->data['mount'] }}) from {{ $notification->data['user_name'] }}
                     </span>
                 @else
                     <span class="font-weight-bold">
-                        A new order with amount ({{ $notification->data['amount'] }}) from {{ $notification->data['user_name'] }}
+                        A new order with amount ({{ $notification->data['mount'] }}) from {{ $notification->data['user_name'] }}
                     </span>
                 @endif
             </div>

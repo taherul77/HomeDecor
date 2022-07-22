@@ -36,7 +36,7 @@ class OrderController extends Controller
         $this->authorize('show_order');
 
         $orderStatusArray = [
-            '0' => 'New order',
+            '0' => 'On Hold',
             '1' => 'Paid',
             '2' => 'Under process',
             '3' => 'Finished',

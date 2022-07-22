@@ -13,7 +13,7 @@
                                 <div class="inner-box">
                                     <div class="image">
                                         @if($product->firstMedia)
-                                        <img src="{{ asset('frontend/assets2/images/resource/products/' . $product->firstMedia->file_name ) }}"
+                                        <img src="{{ asset('frontend/assets2/images/resource/'.$product->firstMedia->file_name) }}"
                                             alt="{{ $product->name }}">
                                         @else
                                         <img src="{{ asset('frontend/assets2/images/resource/products/1.jpg' ) }}"

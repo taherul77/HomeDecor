@@ -43,7 +43,7 @@
                         <td>{{ $product->id }}</td>
                         <td>
                             @if($product->firstMedia)
-                            <img src="{{ asset('storage/images/products/' . $product->firstMedia->file_name) }}"
+                            <img src="{{ asset('frontend/assets2/images/resource/'.$product->firstMedia->file_name) }}"
                                  width="60" height="60" alt="{{ $product->name }}">
                             @else
                                 <img src="{{ asset('img/no-img.png') }}" width="60" height="60" alt="{{ $product->name }}">
@@ -52,7 +52,7 @@
                         <td><a href="{{ route('admin.products.show', $product->id) }}">{{ $product->name }}</a></td>
                         <td>{{ $product->featured }}</td>
                         <td>{{ $product->quantity }}</td>
-                        <td>&#2547; {{ $product->price }}</td>
+                        <td>BDT {{ $product->price }}</td>
                         <td class="text-danger">{{ $product->tags->pluck('name')->join(', ') }}</td>
                         <td>{{ $product->category ? $product->category->name : NULL }}</td>
                         <td>{{ $product->status }}</td>

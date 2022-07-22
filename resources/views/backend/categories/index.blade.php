@@ -38,7 +38,7 @@
                         <td>{{ $category->id }}</td>
                         <td>
                             @if($category->cover)
-                                <img src="{{ asset('storage/images/categories/' . $category->cover) }}"
+                                <img src="{{ asset('frontend/assets2/images/cat/' . $category->cover) }}"
                                      width="60" height="60" alt="{{ $category->name }}">
                             @else
                                 <img src="{{ asset('img/no-img.png') }}" width="60" height="60" alt="{{ $category->name }}">

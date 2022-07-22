@@ -43,8 +43,8 @@
                                                         id="pro-details{{ $loop->index }}" role="tabpanel">
                                                         <div class="image-box">
                                                             @if($product->media)
-                                                                <a href="{{ asset('frontend/assets2/images/resource/products/' . $media->file_name ) }}">
-                                                                    <img src="{{ asset('frontend/assets2/images/resource/products/' . $media->file_name ) }}"
+                                                                <a href="{{ asset('frontend/assets2/images/resource/' . $media->file_name ) }}">
+                                                                    <img src="{{ asset('frontend/assets2/images/resource/'.$media->file_name) }}"
                                                                         alt="{{ $product->name }}">
                                                                 </a>
                                                             @else
@@ -60,7 +60,7 @@
                                                         <a class="{{ $loop->index == 0 ? 'active' : '' }} mr-12"
                                                         href="#pro-details{{ $loop->index }}" data-toggle="tab" role="tab"
                                                         aria-selected="true">
-                                                            <img style="width: 90px;" src="{{ asset('frontend/assets2/images/resource/products/' . $media->file_name ) }}"
+                                                            <img style="width: 90px;" src="{{ asset('frontend/assets2/images/resource/' . $media->file_name ) }}"
                                                                 alt="{{ $product->name }}">
                                                         </a>
                                                     @endforeach
@@ -73,9 +73,9 @@
                                         <div class="info-column col-md-6 col-sm-12">
                                             <div class="details-header">
                                             <h3>{{ $product->name }}</h3>
-                                                <div class="rating"><span class="fa fa-star"></span>
+                                                <!-- <div class="rating"><span class="fa fa-star"></span> -->
 
-                                                <div class="quick-view-number">
+                                                <!-- <div class="quick-view-number">
                                                     <span class="score">
                                                         <div class="score-wrap">
                                                             @if($product->approved_reviews_avg_rating)
@@ -92,12 +92,12 @@
                                                         </div>
                                                     </span>
                                                     <span>{{ $product->approved_reviews_count }} Ratting (S)</span>
-                                                </div>
+                                                </div> -->
 
 
 
 
-                                                <div class="item-price"><span>${{ $product->price }}</span></div>
+                                                <div class="item-price"><span>&#2547;{{ $product->price }}</span></div>
                                                 <p>{{ $product->description }}</p>
                                                 <livewire:frontend.product.single-product-cart-component :product="$product"/>
 

@@ -55,3 +55,7 @@ Route::group(['middleware' => 'auth'], function (): void {
         Route::get('/payment/charge-update', [TapController::class, 'chargeUpdate'])->name('checkout.charge_update');
     });
 });
+
+
+// Route::get('image/{filename}', [HomeController::class, 'displayImage'])->name('image.displayImage');
+

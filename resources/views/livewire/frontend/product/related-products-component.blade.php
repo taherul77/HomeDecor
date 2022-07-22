@@ -9,7 +9,7 @@
                     <div class="product-fruit-wrapper mb-60">
                         <div class="product-fruit-img">
                             @if($product->firstMedia)
-                                <img src="{{ asset('frontend/assets2/images/resource/products/' . $product->firstMedia->file_name ) }}"
+                                <img src="{{ asset('frontend/assets2/images/resource/'.$product->firstMedia->file_name) }}"
                                      alt="{{ $product->name }}">
                             @else
                                 <img src="{{ asset('frontend/assets2/images/resource/products/10.jpg' ) }}" alt="">

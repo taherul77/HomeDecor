@@ -31,7 +31,7 @@
                         <a class="category-item" href="{{ route('shop.index', $categories[0]->slug ?? '') }}">
                         @if($categories[0]->cover ?? '')
                             <img class="img-fluid"
-                                 src="{{ asset('storage/images/categories/' . $categories[0]->cover ?? '') }}"
+                                 src="{{ asset('frontend/assets2/images/cat/' . $categories[0]->cover ?? '') }}"
                                  alt="{{ $categories[0]->name ?? '' }}">
                         @else
                             <img class="img-fluid" src="{{ asset('frontend/assets/categories/cat-img-1.jpg') }}" alt="">
@@ -46,7 +46,7 @@
                             <a class="category-item" href="{{ route('shop.index', $categories[1]->slug ?? '') }}">
                         @if($categories[0]->cover ?? '')
                             <img class="img-fluid"
-                                 src="{{ asset('storage/images/categories/' . $categories[1]->cover ?? '') }}"
+                                 src="{{ asset('frontend/assets2/images/cat/' . $categories[1]->cover ?? '') }}"
                                  alt="{{ $categories[1]->name ?? '' }}">
                         @else
                             <img class="img-fluid" src="{{ asset('frontend/assets/categories/cat-img-1.jpg') }}" alt="">
@@ -62,7 +62,7 @@
                             <a class="category-item" href="{{ route('shop.index', $categories[2]->slug ?? '') }}">
                         @if($categories[0]->cover ?? '')
                             <img class="img-fluid"
-                                 src="{{ asset('storage/images/categories/' . $categories[2]->cover ?? '') }}"
+                                 src="{{ asset('frontend/assets2/images/cat/' . $categories[2]->cover ?? '') }}"
                                  alt="{{ $categories[2]->name ?? '' }}">
                         @else
                             <img class="img-fluid" src="{{ asset('frontend/assets/categories/cat-img-1.jpg') }}" alt="">
@@ -76,18 +76,19 @@
                         <div class="inner-box">
                             <div class="image-box">
                             <a class="category-item" href="{{ route('shop.index', $categories[3]->slug ?? '') }}">
-                        @if($categories[0]->cover ?? '')
-                            <img class="img-fluid"
-                                 src="{{ asset('storage/images/categories/' . $categories[3]->cover ?? '') }}"
-                                 alt="{{ $categories[3]->name ?? '' }}">
-                        @else
-                            <img class="img-fluid" src="{{ asset('frontend/assets/categories/cat-img-1.jpg') }}" alt="">
-                        @endif
-                        <strong class="category-item-title">{{ $categories[3]->name ?? '' }}</strong>
-                    </a>
+                                @if($categories[0]->cover ?? '')
+                                    <img class="img-fluid"
+                                        src="{{ asset('frontend/assets2/images/cat/' . $categories[3]->cover ?? '') }}"
+                                        alt="{{ $categories[3]->name ?? '' }}">
+                                @else
+                                    <img class="img-fluid" src="{{ asset('frontend/assets/categories/cat-img-1.jpg') }}" alt="">
+                                @endif
+                                <strong class="category-item-title">{{ $categories[3]->name ?? '' }}</strong>
+                            </a>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>
