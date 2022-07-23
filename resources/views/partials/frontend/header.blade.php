@@ -36,7 +36,7 @@
                 <div class="logo-box">
                     <div class="logo">
                         <a href="{{route('home')}}">
-                            <img src="{{ asset('frontend/assets2/images/resource/hdlogo.png') }}" alt="Home Decor Logo">
+                            <img src="{{ asset('frontend/assets2/images/resource/hdlogo.png') }}" alt="Home Decor Logo" style="width:120px;height:50px;"> 
                         </a>
                     </div>
                 </div>
