@@ -63,7 +63,7 @@
                                        class="custom-control-label text-small">
                                     <b>{{ $shippingCompany->name }}</b>
                                     <small>
-                                        {{ $shippingCompany->description }} (${{ $shippingCompany->cost }})
+                                        {{ $shippingCompany->description }} (&#2547;{{ $shippingCompany->cost }})
                                     </small>
                                 </label>
                             </div>

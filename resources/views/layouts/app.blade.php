@@ -18,8 +18,8 @@
 
     <!--Color Themes-->
     <link id="theme-color-file" href="{{ asset('frontend/assets2/css/color-themes/default-theme.css') }}" rel="stylesheet">
-    <link rel="shortcut icon" href="{{ asset('frontend/assets2/images/favicon.png') }}" type="image/x-icon">
-    <link rel="icon" href="{{ asset('frontend/assets2/images/favicon.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('frontend/assets2/images/favicon1.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('frontend/assets2/images/favicon1.png') }}" type="image/x-icon">
 
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

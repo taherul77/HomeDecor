@@ -36,7 +36,7 @@
                 <div class="logo-box">
                     <div class="logo">
                         <a href="{{route('home')}}">
-                            <img src="{{ asset('frontend/assets2/images/logo100.png') }}" alt="Home Decor Logo">
+                            <img src="{{ asset('frontend/assets2/images/resource/hdlogo.png') }}" alt="Home Decor Logo">
                         </a>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
 
             <!--Logo-->
             <div class="logo pull-left">
-                <a href="index.html" title=""><img src="frontend/assets2/images/logo100.png" alt="" title=""></a>
+                <a href="{{route('home')}}" title=""><img src="{{ asset('frontend/assets2/images/resource/hdlogo.png') }}" alt="" title=""></a>
             </div>
 
             <!--Right Col-->

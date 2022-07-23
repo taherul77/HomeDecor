@@ -17,7 +17,7 @@
 <div class="container-fluid">
     <div class="pb-50">
         <div class="section-title-furits text-center">
-            <img src="{{ asset('frontend/img/icon-img/49.png') }}" alt="">
+            <img src="{{ asset('frontend/assets2/images/resource/hdlogo2.png') }}" alt="">
             <h2>BROWSE OUR CATEGORIES</h2>
         </div>
         <br>
@@ -88,6 +88,7 @@
                             </div>
                         </div>
                     </div>
+                  
                     
                 </div>
             </div>

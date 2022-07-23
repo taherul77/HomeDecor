@@ -7,7 +7,7 @@
             <div class="auto-container">
                 <div class="inner-container clearfix">
                     <div class="title-box">
-                        <h1>Shopping Cart</h1><span class="title">The Interior speak for themselves</span>
+                        <h1>Shopping Cart</h1>
                     </div>
                     <ul class="bread-crumb clearfix">
                         <li><a href="{{ route('home') }}">Home</a></li>

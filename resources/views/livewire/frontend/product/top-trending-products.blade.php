@@ -1,6 +1,6 @@
 <div wire:ignore id="all-products" class="product-style-area pt-130 pb-30 wow fadeInUp">
     <div class="section-title-furits text-center mb-95">
-        <img src="{{ asset('frontend/img/icon-img/49.png') }}" alt="">
+        <img src="{{ asset('frontend/assets2/images/resource/hdlogo2.png') }}" alt="">
         <h2>TOP TRENDING PRODUCTS</h2>
     </div>
     <div class="container">

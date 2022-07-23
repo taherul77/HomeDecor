@@ -10,7 +10,7 @@
                                 <div class="footer-column col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                     <div class="footer-widget about-widget">
                                         <div class="footer-logo">
-                                            <figure><a href="{{ route('home') }}"><h1>Home Decor</h1></a>
+                                            <figure><a href="{{ route('home') }}"><img src="{{ asset('frontend/assets2/images/resource/hdlogo.png') }}"></a>
                                             </figure>
                                         </div>
                                         <div class="widget-content">
@@ -26,8 +26,8 @@
                                         <!--Footer Column-->
                                         <div class="widget-content">
                                             <div class="post">
-                                                <div class="thumb"><a href="{{ route('home') }}"><img
-                                                            src="images/resource/post-thumb-1.jpg"></a></div>
+                                                <div class="thumb"><a href="{{ route('home') }}">
+                                                    <img src="{{ asset('frontend/assets2/images/resource/hdlogo2.png') }}"></a></div>
                                                 <h4>Daffodil Smart City, Ashulia,
                                                     Dhaka 1341 Khagan, Dhaka Division, Bangladesh</h4>
                                                 
@@ -47,7 +47,7 @@
                                             <ul class="list">
                             
                                 <li><a href="{{ route('cart.index') }}"><img
-                                            src="{{ asset('frontend/img/icon-img/41.png') }}" alt="hhhhhh"> Cart</a></li>
+                                            src="{{ asset('frontend/img/icon-img/41.png') }}" alt=""> Cart</a></li>
                                 <li>
                                     <a href="{{ route('user.dashboard') }}"><img src="{{ asset('frontend/img/icon-img/41.png') }}" alt="">
                                         My Account</a>
@@ -136,9 +136,9 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center">
+            <!-- <div class="text-center">
                 <img src="{{ asset('frontend/img/icon-img/3.png') }}" alt="">
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="food-copyright black-bg-6 ptb-30">
