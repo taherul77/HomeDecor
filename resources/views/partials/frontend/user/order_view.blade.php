@@ -17,7 +17,7 @@
                         </strong>
                     </td>
                     <td class="product-total">
-                        <span class="amount">${{Cart::session(auth()->id())->get($item->id)->getPriceSum()}}</span>
+                        <span class="amount">&#2547;{{Cart::session(auth()->id())->get($item->id)->getPriceSum()}}</span>
                     </td>
                 </tr>
             @endforeach
@@ -25,15 +25,15 @@
             <tfoot>
             <tr class="cart-subtotal">
                 <th>Cart Subtotal</th>
-                <td><span class="amount">${{ auth()->user()->orderSubTotal() }}</span></td>
+                <td><span class="amount">&#2547;{{ auth()->user()->orderSubTotal() }}</span></td>
             </tr>
             <tr class="cart-subtotal">
                 <th>Tax(5%)</th>
-                <td><span class="amount">${{ auth()->user()->tax() }}</span></td>
+                <td><span class="amount">&#2547;{{ auth()->user()->tax() }}</span></td>
             </tr>
             <tr class="order-total">
                 <th>Order Quantity</th>
-                <td><strong><span class="amount">${{ auth()->user()->orderTotal() }}</span></strong></td>
+                <td><strong><span class="amount">&#2547;{{ auth()->user()->orderTotal() }}</span></strong></td>
             </tr>
 
             </tfoot>

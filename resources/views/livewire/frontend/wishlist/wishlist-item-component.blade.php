@@ -2,7 +2,7 @@
     <td class="product-thumbnail">
         @if($wishlistItem->model->firstMedia)
             <a href="{{ route('product.show', $wishlistItem->model->slug) }}">
-                <img src="{{ asset('frontend/assets2/images/resource/products/' . $wishlistItem->model->firstMedia->file_name) }}"
+                <img src="{{ asset('frontend/assets2/images/resource/' . $wishlistItem->model->firstMedia->file_name) }}"
                      alt="{{ $wishlistItem->model->name }}" width="70">
             </a>
         @else
