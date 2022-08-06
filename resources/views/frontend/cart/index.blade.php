@@ -39,8 +39,28 @@
                                     <livewire:frontend.cart.cart-item-component :item="$item->rowId" :key="$item->rowId"/>
                                 @endforeach
                                 <livewire:frontend.message.cart-not-found-component />
+                                
                             </tbody>
+                            
                         </table>
+                        <!-- cart total -->
+                            <div class="row">
+                                <livewire:frontend.cart.cart-total-component/>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 ">
+                                    <a href="{{route('shop.index')}}"
+                                    class="theme-btn proceed-btn">
+                                        <i class="fa fa-long-arrow-alt-left mr-1"></i>
+                                        Continue to shopping
+                                    </a>
+                                </div>
+                                @if(Cart::instance('default')->count())
+                                <div class="column pull-right col-lg-6 col-md-6 col-sm-12">
+                                    <livewire:frontend.button.proceed-checkout-button-component />
+                                </div>
+                                @endif
+                            </div>
                     </div>
                     
                 </div>
@@ -48,24 +68,7 @@
             </div>
         </section>
 
-            <!-- cart total -->
-            <div class="row">
-                <livewire:frontend.cart.cart-total-component/>
-            </div>
-            <div class="row">
-                <div class="col-md-4 ">
-                    <a href="{{route('shop.index')}}"
-                       class="theme-btn proceed-btn">
-                        <i class="fas fa-long-arrow-alt-left mr-1"></i>
-                        Continue to shopping
-                    </a>
-                </div>
-                @if(Cart::instance('default')->count())
-                <div class="column pull-right col-lg-6 col-md-6 col-sm-12">
-                    <livewire:frontend.button.proceed-checkout-button-component />
-                </div>
-                @endif
-            </div>
+            
        
     </div>
 @endsection
