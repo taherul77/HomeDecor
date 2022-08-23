@@ -19,7 +19,7 @@
                 @forelse($orders as $odr)
                     <tr wire:key="{{ $odr->id }}">
                         <td>{{ $odr->ref_id }}</td>
-                        <td>{{ $odr->currency() . ' ' . $odr->total }}</td>
+                        <td>{{ ' ৳ ' . $odr->total }}</td>
                         <td>{!! $odr->statusWithBadge() !!}</td>
                         <td>{{ $odr->created_at ? $odr->created_at->format('d-m-Y') : ''}}</td>
                         <td class="text-right">
@@ -55,7 +55,7 @@
                         @forelse($order->products as $product)
                             <tr>
                                 <td>{{ $product->name }}</td>
-                                <td>{{ $order->currency() . ' ' . number_format($product->price, 2) }}</td>
+                                <td>{{ ' ৳ ' . number_format($product->price, 2) }}</td>
                                 <td>{{ $product->pivot->quantity }}</td>
                                 <td>{{ $order->currency() . ' ' . number_format($product->price * $product->pivot->quantity, 2) }}</td>
                             </tr>
@@ -64,25 +64,25 @@
 
                         <tr>
                             <td colspan="3" class="text-right"><strong>Subtotal</strong></td>
-                            <td>{{ $order->currency() . ' ' . number_format($order->subtotal, 2) }}</td>
+                            <td>{{ ' ৳ ' . number_format($order->subtotal, 2) }}</td>
                         </tr>
                         @if(!is_null($order->discount_code))
                             <tr>
                                 <td colspan="3" class="text-right"><strong>Discount (<small>{{ $order->discount_code }}</small>)</strong></td>
-                                <td>{{ $order->currency() . ' ' . number_format($order->discount, 2) }}</td>
+                                <td>{{ ' ৳ ' . number_format($order->discount, 2) }}</td>
                             </tr>
                         @endif
                         <tr>
                             <td colspan="3" class="text-right"><strong>Tax</strong></td>
-                            <td>{{ $order->currency() . ' ' . number_format($order->tax, 2) }}</td>
+                            <td>{{ ' ৳ ' . number_format($order->tax, 2) }}</td>
                         </tr>
                         <tr>
                             <td colspan="3" class="text-right"><strong>Shipping</strong></td>
-                            <td>{{ $order->currency() . ' ' . number_format($order->shipping, 2) }}</td>
+                            <td>{{ ' ৳ ' . number_format($order->shipping, 2) }}</td>
                         </tr>
                         <tr>
                             <td colspan="3" class="text-right"><strong>Total</strong></td>
-                            <td>{{ $order->currency() . ' ' . number_format($order->total, 2) }}</td>
+                            <td>{{ ' ৳ ' . number_format($order->total, 2) }}</td>
                         </tr>
                         </tbody>
                     </table>

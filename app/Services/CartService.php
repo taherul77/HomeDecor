@@ -18,6 +18,7 @@ class CartService
             throw new Exception('Product already exist.');
         } else {
             Cart::instance($instance)->add($product->id, $product->name, $quantity, $product->price)->associate(Product::class);
+          
             return true;
         }
     }

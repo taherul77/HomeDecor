@@ -14,6 +14,8 @@ class CartItemComponent extends Component
     public $item;
     public $itemQuantity = 1;
 
+    
+
     public function mount()
     {
         $this->itemQuantity = Cart::instance('default')->get($this->item)->qty ?? 1;
@@ -49,11 +51,11 @@ class CartItemComponent extends Component
         }
     }
 
-    public function removeFromCart($rowId)
+    public function removeFromCart($rowId,$id)
     {
-        $this->clearSession();
-        $this->emit('remove_from_cart', $rowId);
-        $this->alert('success', 'Item removed from cart!');
+        Cart::remove($rowId);
+        redirect('cart');
+      
     }
 
     protected function clearSession()
@@ -67,6 +69,7 @@ class CartItemComponent extends Component
 
     public function render()
     {
+
         return view('livewire.frontend.cart.cart-item-component', [
             'cartItem' => Cart::instance('default')->get($this->item)
         ]);

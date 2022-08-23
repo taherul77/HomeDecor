@@ -98,7 +98,7 @@
 
 
                                                 <div class="item-price"><span>&#2547;{{ $product->price }}</span></div>
-                                                <p>{{ $product->description }}</p>
+                                                <p><?= $product->description ?></p>
                                                 <livewire:frontend.product.single-product-cart-component :product="$product"/>
 
 

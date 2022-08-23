@@ -1,3 +1,5 @@
+
+
 <tr x-data="{ show: true }" x-show="show">
     <td class="product-thumbnail">
         <a href="{{ route('product.show', $cartItem->model->slug) }}">
@@ -35,7 +37,7 @@
         <p class="mb-0">&#2547;{{ ($cartItem->model->price) * ($cartItem->qty) }}</p>
     </td>
     <td>
-        <a wire:click.prevent="removeFromCart('{{ $cartItem->rowId }}')"
+        <a wire:click.prevent="removeFromCart('{{ $cartItem->rowId }}', '{{ $cartItem->id }}')"
            x-on:click="show = false"
            style="cursor: pointer;">
             <i class="fa fa-trash text-muted"></i>
