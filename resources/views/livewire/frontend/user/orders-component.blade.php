@@ -57,7 +57,7 @@
                                 <td>{{ $product->name }}</td>
                                 <td>{{ ' ৳ ' . number_format($product->price, 2) }}</td>
                                 <td>{{ $product->pivot->quantity }}</td>
-                                <td>{{ $order->currency() . ' ' . number_format($product->price * $product->pivot->quantity, 2) }}</td>
+                                <td>{{  ' ৳ ' . number_format($product->price * $product->pivot->quantity, 2) }}</td>
                             </tr>
                         @empty
                         @endforelse

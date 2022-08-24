@@ -100,7 +100,7 @@
             @endif
 
             @if($userAddressId && $shippingCompanyId && $paymentMethodId)
-                @if(\Str::lower($paymentMethodCode) == 'ppex')
+                @if(\Str::lower($paymentMethodCode) == 'cod')
                     <form action="{{ route('payment.store') }}" method="POST">
                         @csrf
                         <input type="hidden" name="userAddressId" value="{{ old('userAddressId', $userAddressId) }}"
@@ -110,7 +110,7 @@
                         <input type="hidden" name="paymentMethodId" value="{{ old('paymentMethodId', $paymentMethodId) }}"
                                class="form-control">
                         <button type="submit" name="submit" class="btn btn-sm btn-primary btn-block uppercase">
-                            PayPay Place order
+                             Place order
                         </button>
                     </form>
                 @endif
@@ -128,6 +128,15 @@
                         </button>
                     </form>
                 @endif
+                
+                   
+                    <!-- <label >
+                        <input type="hidden" name="userAddressId" value="cod"
+                            class="form-control">
+                            <span> Cash on delivery </span>
+                    </label>
+                         -->
+               
             @endif
         </div>
         <div class="col-lg-6 col-md-12 col-12">

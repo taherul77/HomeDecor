@@ -82,7 +82,7 @@ class Order extends Model
     public function statusWithBadge(): string
     {
         switch ($this->order_status) {
-            case 0: return '<label class="badge badge-success">New order</label>';
+            case 0: return '<label class="badge badge-success">Cash On Delivery</label>';
             case 1: return '<label class="badge badge-warning">Paid</label>';
             case 2: return '<label class="badge badge-warning">Under process</label>';
             case 3: return '<label class="badge badge-primary">Finished</label>';

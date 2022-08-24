@@ -44,6 +44,7 @@
                         <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                             New Orders (Monthly)
                         </div>
+                        
                         <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $currentMonthOrderNew }}</div>
                     </div>
                     <div class="col-auto">
