@@ -73,7 +73,7 @@ class SingleProductReviewComponent extends Component
             $rating->status = 1;
             $rating->save();
             Cache::forget('recent_reviews');
-            $this->alert('success', 'Your review added successfully');
+            // $this->alert('success', 'Your review added successfully');
         } else {
             if ($rating->status == 'Inactive'){
                 $this->alert('error', 'already rating this item');
@@ -87,7 +87,7 @@ class SingleProductReviewComponent extends Component
             $rating->status = 1;
             $rating->update();
             Cache::forget('recent_reviews');
-            $this->alert('success', 'Your review updated successfully');
+            // $this->alert('success', 'Your review updated successfully');
         }
 
         $this->showForm = false;
@@ -108,7 +108,7 @@ class SingleProductReviewComponent extends Component
         $this->emit('update_rating');
         $this->showForm = true;
         Cache::forget('recent_reviews');
-        $this->alert('success', 'Your review deleted successfully');
+        // $this->alert('success', 'Your review deleted successfully');
     }
 
     public function render()

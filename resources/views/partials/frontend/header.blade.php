@@ -75,12 +75,13 @@
                                 <li class=""><a href="{{route('cart.index')}}">cart</a></li>
 
                                 <li class=""><a href="{{route('contact.index')}}">contact</a></li>
-                                
+                               
 
                                 @guest
                                     <li><a href="{{route('login')}}">Login</a></li>
                                     <li><a href="{{route('register')}}">Register</a></li>
                                 @else
+                                
                                     <li class="dropdown"><a href="javascript:void(0);">My Account</a>
                                             <ul>
                                             @role('admin')

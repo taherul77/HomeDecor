@@ -37,7 +37,7 @@ class PaypalController extends Controller
         }
 
         toast($response->getMessage(), 'error');
-        return redirect()->route('home');
+        return redirect()->route('user.orders');
     }
 
     public function cancelled($orderId): RedirectResponse
