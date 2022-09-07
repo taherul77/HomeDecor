@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Backend;
+namespace App\Http\Controllers\Backend; 
 
 use App\Http\Controllers\Controller;
 use App\Models\Order;
@@ -42,9 +42,9 @@ class OrderController extends Controller
             '3' => 'Finished',
             '4' => 'Rejected',
             '5' => 'Canceled',
-            '6' => 'Refund requested',
-            '7' => 'Returned order',
-            '8' => 'Refunded',
+            // '6' => 'Refund requested',
+            // '7' => 'Returned order',
+            // '8' => 'Refunded',
         ];
 
         $key = array_search($order->order_status, array_keys($orderStatusArray));

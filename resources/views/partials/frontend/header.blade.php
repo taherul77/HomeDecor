@@ -1,7 +1,5 @@
 
 
-
-
 <div class="page-wrapper">
 
 <header class="main-header header-style-two">
@@ -83,9 +81,6 @@
                                     <li><a href="{{route('login')}}">Login</a></li>
                                     <li><a href="{{route('register')}}">Register</a></li>
                                 @else
-                                    
-
-
                                     <li class="dropdown"><a href="javascript:void(0);">My Account</a>
                                             <ul>
                                             @role('admin')
@@ -143,23 +138,7 @@
                                             </div>
                                         </form>
                                     </div>
-                                        <!-- <div class="form-container">
-                                            <form>
-                                                <div class="form-group">
-                                                    <input id="search" type="text" 
-                                                            value="{{ old('keyword', request()->keyword) }}" 
-                                                            placeholder="Search Here" required>
-                                                    <button type="submit" class="search-btn">
-                                                        <span class="fa fa-search"></span>
-                                                    </button>
-                                                </div>
-                                            </form>
-                                            <-- <form>
-                                                <div class="form-input">
-                                                    <input id="search" type="text" value="{{ old('keyword', request()->keyword) }}" placeholder="Search for product...">
-                                                </div>
-                                            </form> -->
-                                        <!-- </div> -->
+                                        
                                     </li>
                                 </ul>
                             </div>

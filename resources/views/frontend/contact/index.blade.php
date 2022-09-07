@@ -57,18 +57,18 @@
                                 <div class="row">
                                     <div class="info-block col-lg-4 col-md-4 col-sm-12">
                                         <div class="inner">
-                                            <p><span>Phone: </span> {!! getSettingsOf('phone_number') !!}</p>
+                                            <p><span>Phone: </span><br> {!! getSettingsOf('phone_number') !!}</p>
                                            
                                         </div>
                                     </div>
                                     <div class="info-block col-lg-4 col-md-4 col-sm-12">
                                         <div class="inner">
-                                            <p><span>Address:</span> {!! getSettingsOf('address') !!}</p>
+                                            <p><span>Address:</span> Dattapara,Ashulia,Saver,Dhaka</p>
                                         </div>
                                     </div>
                                     <div class="info-block col-lg-4 col-md-4 col-sm-12">
                                         <div class="inner">
-                                            <p><span>Email: </span> {!! getSettingsOf('site_email') !!}</p>
+                                            <p><span>Email: </span> <br>{!! getSettingsOf('site_email') !!}</p>
                                         </div>
                                     </div>
                                     

@@ -106,7 +106,7 @@
                                 <td>{{ $transaction->status() }}</td>
                                 <td>{{ $transaction->created_at->format('Y-m-d') }}</td>
                            {{-- <td>{{ \Carbon\Carbon::now()->addDays(5)->diffInDays($transaction->created_at->format('Y-m-d')) }}</td>--}}
-                                <td>
+                                <!-- <td>
                                     @if ($loop->last && $transaction->transaction_status == \App\Models\OrderTransaction::FINISHED &&
                                         \Carbon\Carbon::now()->addDays(5)->diffInDays($transaction->created_at->format('Y-m-d')) != 0)
                                         <button type="button" wire:click="requestReturnOrder('{{ $order->id }}')" class="btn btn-link text-right">
@@ -115,7 +115,7 @@
                                         <br>
                                         <small>you can return this order in {{ 4 - $transaction->created_at->diffInDays() }} days</small>
                                     @endif
-                                </td>
+                                </td> -->
                             </tr>
                         @empty
                         @endforelse
@@ -123,5 +123,9 @@
                 </div>
             </div>
         @endif()
+
+                                                 
     </div>
+    
+
 </div>

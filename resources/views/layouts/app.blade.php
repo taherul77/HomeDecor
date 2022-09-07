@@ -12,6 +12,19 @@
     <link href="{{ asset('frontend/assets2/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/assets2/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/assets2/css/responsive.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('frontend/assets2/css/animate.css') }}">
+    <link href="{{ asset('frontend/assets2/css/color-switcher-design.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/assets2/css/font-awesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/assets2/css/jquery.bootstrap-touchspin.css') }}" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/meanmenu.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/custom.css') }}"> -->
+    <link href="{{ asset('frontend/assets2/css/jquery.fancybox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/assets2/css/jquery.mCustomScrollbar.min.css') }}" rel="stylesheet">
+    
+
 
     <!--Color Switcher Mockup-->
     <link href="{{ asset('frontend/assets2/css/color-switcher-design.css') }}" rel="stylesheet">

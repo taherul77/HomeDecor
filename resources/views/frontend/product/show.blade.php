@@ -15,14 +15,6 @@
             </div>
         </div>
 </div>
-
-
-
-
-
-
-
-
 <div class="sidebar-page-container">
             <div class="auto-container">
                 <div class="row clearfix">
@@ -73,9 +65,9 @@
                                         <div class="info-column col-md-6 col-sm-12">
                                             <div class="details-header">
                                             <h3>{{ $product->name }}</h3>
-                                                <!-- <div class="rating"><span class="fa fa-star"></span> -->
+                                                <div class="rating">
 
-                                                <!-- <div class="quick-view-number">
+                                                <div class="quick-view-number">
                                                     <span class="score">
                                                         <div class="score-wrap">
                                                             @if($product->approved_reviews_avg_rating)
@@ -92,17 +84,11 @@
                                                         </div>
                                                     </span>
                                                     <span>{{ $product->approved_reviews_count }} Ratting (S)</span>
-                                                </div> -->
-
-
-
+                                                </div>
 
                                                 <div class="item-price"><span>&#2547;{{ $product->price }}</span></div>
                                                 <p><?= $product->description ?></p>
-                                                <livewire:frontend.product.single-product-cart-component :product="$product"/>
-
-
-                                                
+                                                <livewire:frontend.product.single-product-cart-component :product="$product"/> 
                                             </div>
                                             
                                         </div>
